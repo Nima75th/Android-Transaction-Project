@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.navigation">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Navigation">
+        <activity
+            android:name=".RentContract"
+            android:exported="false" />
+        <activity
+            android:name=".RentDetailsForm"
+            android:exported="false" />
+        <activity
+            android:name=".RentForm"
+            android:exported="false" />
+        <activity
+            android:name=".Mortgage_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Mortgager"
+            android:exported="false" />
+        <activity
+            android:name=".SellDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Mortgage"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer"
+            android:exported="false" />
+        <activity
+            android:name=".seller"
+            android:exported="false" />
+        <activity
+            android:name=".RentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Renter"
+            android:exported="true" />
+        <activity
+            android:name=".Mine_View"
+            android:exported="false" />
+        <activity
+            android:name=".Mine"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".FirstMoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Contract"
+            android:exported="false" />
+        <activity
+            android:name=".Meli_Ask"
+            android:exported="false" />
+        <activity
+            android:name=".BuildingView"
+            android:exported="false" />
+        <activity
+            android:name=".AddNoteActivityBuilding"
+            android:exported="false" />
+        <activity
+            android:name=".AddNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SighnUp"
+            android:exported="false" />
+        <activity
+            android:name=".SearchView"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
