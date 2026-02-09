@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Meli_Ask"
+    android:background="#F9F9F9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Meli_Ask"
+            android:id="@+id/Meli_Ask"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MeliCode"
+            android:hint="@string/MeliCode"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:layout_below="@+id/Meli_Ask"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Submit"
+            android:layout_below="@+id/MeliCode"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="ورود"
+            android:textSize="30sp"
+            android:backgroundTint="#FF7B70"
+            android:textColor="@color/white"/>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:hideOnScroll="true"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="selected"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"
+            android:focusable="false"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/topAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"/>
+
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

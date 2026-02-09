@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentContract"
+    android:background="#FFD93D"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="مشاهده قرارداد"
+            android:textSize="20sp"
+            android:id="@+id/Contract"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            android:background="#181823"
+            app:backgroundTint="#181823"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/topAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:backgroundTint="#181823"
+        android:focusable="false"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"
+            app:menu="@menu/top_menu"
+            android:layout_marginLeft="300dp"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Float"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/bottomAppbar"
+        app:maxImageSize="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

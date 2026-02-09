@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seller"
+    android:background="#FFD93D"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/Text"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/text_pattern"
+
+            >
+
+            <TextView
+                android:id="@+id/Text_Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="لطفا اطلاعات شخصی خود را وارد فرمایید"
+                android:textSize="20sp"
+                android:textColor="#212A3E"
+                android:gravity="center"
+                android:padding="25dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/Text"
+            android:id="@+id/Personal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" تاریخ :"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:id="@+id/Date"
+                />
+
+            <EditText
+                android:id="@+id/Day"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:layout_toStartOf="@+id/Date"
+                android:gravity="right"/>
+            <TextView
+                android:id="@+id/slash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_toStartOf="@+id/Day"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Month"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@+id/slash1"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                />
+            <TextView
+                android:id="@+id/slash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_toStartOf="@+id/Month"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/Year"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/slash2"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:gravity="right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فروشنده"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/buyer"
+                android:layout_below="@+id/Year"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:id="@+id/BuyerName"
+                android:textSize="15sp"
+                android:layout_toStartOf="@+id/buyer"
+                android:layout_below="@+id/Year"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فرزند"
+                android:layout_toStartOf="@+id/BuyerName"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ChildOf"
+                android:layout_below="@+id/Year"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/ChildOfName"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/ChildOf"
+                android:textSize="15sp"
+                android:layout_below="@+id/Year"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="5dp"
+                android:gravity="right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شماره شناسنامه"
+                android:id="@+id/IdCode"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/BuyerName"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/IdCodeValue"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/IdCode"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:layout_below="@+id/BuyerName"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صادره از"
+                android:id="@+id/From"
+                android:layout_toStartOf="@+id/ChildOfName"
+                android:layout_below="@+id/IdCode"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/FormValue"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/From"
+                android:layout_below="@id/IdCode"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کد ملی"
+                android:id="@+id/Meli"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/From"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/MeliCode"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/Meli"
+                android:layout_below="@id/From"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="متولد"
+                android:id="@+id/Born"
+                android:layout_toStartOf="@+id/MeliCode"
+                android:layout_below="@+id/From"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/BornValue"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/Born"
+                android:layout_below="@id/From"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آدرس دقیق و کامل"
+                android:id="@+id/Address"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Meli"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/AddressValue"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/Address"
+                android:layout_below="@id/Meli"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کد پستی"
+                android:id="@+id/PostCode"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Address"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/PostCodeValue"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/PostCode"
+                android:layout_below="@id/Address"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تلفن"
+                android:id="@+id/Phone"
+                android:layout_below="@+id/Address"
+                android:layout_toStartOf="@+id/PostCodeValue"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/PhoneValue"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@+id/Phone"
+                android:layout_below="@id/Address"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موبایل"
+                android:id="@+id/Mobile"
+                android:layout_below="@+id/PostCode"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/MobileValue"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/PostCode"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/Mobile"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بعدی"
+            android:layout_below="@+id/Personal"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:id="@+id/Next"
+            android:backgroundTint="#FF7B70"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            android:background="#181823"
+            app:backgroundTint="#181823"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/topAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:backgroundTint="#181823"
+        android:focusable="false"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"
+            app:menu="@menu/top_menu"
+            android:layout_marginLeft="300dp"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Float"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/bottomAppbar"
+        app:maxImageSize="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:background="#F4F4F4">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/T_Name"
+            android:hint="@string/CustomerName"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/T_Address"
+            android:id="@+id/Buttons"
+
+            >
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="#FF7B70"
+                android:text="@string/Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/Pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:backgroundTint="#FF7B70"
+                android:text="آپلود عکس"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/Auth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF7B70"
+                android:text="@string/Auth"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/Pic"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <EditText
+            android:id="@+id/T_Meli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/CustomerIdCode"
+            android:inputType="number"
+            android:layout_below="@id/T_Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="right"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/T_Mobile"
+            android:hint="@string/CustomerMobile"
+            android:inputType="phone"
+            android:layout_below="@id/T_Meli"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="right"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/T_Email"
+            android:hint="@string/CustomerEmail"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/T_Mobile"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/T_Address"
+            android:hint="@string/CustomerAddress"
+            android:layout_below="@id/T_Email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/Buttons"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/Picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/building"
+                android:maxHeight="300dp"
+                android:maxWidth="300dp"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:hideOnScroll="true"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:background="#181823"
+            app:backgroundTint="#181823"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="selected"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            android:backgroundTint="@color/white"
+            android:focusable="false"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TopApp"
+        android:gravity="top"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        tools:ignore="BottomAppBar">
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

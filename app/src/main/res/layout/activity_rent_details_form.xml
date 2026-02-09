@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentDetailsForm"
+    android:background="#FFD93D"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/Personal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="مورد اجاره :"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/Rent_Type"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آپارتمان"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/Apartment"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/Rent_Type"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پارکینگ : دارد"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Apartment"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Parking"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="انباری : ندارد"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Apartment"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/Parking"
+            android:id="@+id/StoreRoom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آب : دارد"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Apartment"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/StoreRoom"
+            android:id="@+id/Water"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="برق : دارد"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Apartment"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/Water"
+            android:id="@+id/Electricity"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="گاز : دارد"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Apartment"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/Electricity"
+            android:id="@+id/Gaz"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اتاق : دارد"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Parking"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Room"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تعداد اتاق : 2"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Parking"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/RoomCount"
+            android:layout_toStartOf="@+id/Room"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدت زمان اجاره : 2 ماه"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Parking"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/RentTime"
+            android:layout_toStartOf="@+id/RoomCount"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="از تاریخ : 1402/02/18"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Room"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/FromDate"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تا تاریخ : 1403/02/18"
+            android:textColor="@color/white"
+            android:layout_below="@+id/Room"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ToDate"
+            android:layout_toStartOf="@+id/FromDate"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" مبلغ رهن به عدد : 20000000 تومان می باشد ."
+            android:textColor="@color/white"
+            android:layout_below="@+id/FromDate"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/MortgageNumber"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" مبلغ رهن به حروف : بیست میلیون  تومان می باشد ."
+            android:textColor="@color/white"
+            android:layout_below="@+id/MortgageNumber"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/MortgageTXT"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" مبلغ اجاره به عدد : 2000000 تومان می باشد ."
+            android:textColor="@color/white"
+            android:layout_below="@+id/MortgageTXT"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/RentNumber"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" مبلغ اجاره به حروف : بیست میلیون  تومان می باشد ."
+            android:textColor="@color/white"
+            android:layout_below="@+id/RentNumber"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/RentTXT"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            android:background="#181823"
+            app:backgroundTint="#181823"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/topAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:backgroundTint="#181823"
+        android:focusable="false"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"
+            app:menu="@menu/top_menu"
+            android:layout_marginLeft="300dp"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Float"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/bottomAppbar"
+        app:maxImageSize="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

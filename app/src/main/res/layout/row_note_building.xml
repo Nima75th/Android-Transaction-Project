@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Title"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Description" />
+
+
+        <TextView
+            android:id="@+id/Old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Description"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Old" />
+
+        <TextView
+            android:id="@+id/Meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Old"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Meter" />
+
+        <TextView
+            android:id="@+id/Floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Meter"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Floor" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/Parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Floor"
+            android:layout_alignParentRight="true"
+            android:text="@string/Parking" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/Storeroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Parking"
+            android:layout_alignParentRight="true"
+            android:text="@string/Storeroom" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/Elevator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Storeroom"
+            android:layout_alignParentRight="true"
+            android:text="@string/Elevator" />
+
+        <TextView
+            android:id="@+id/RoomNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Elevator"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/RoomNumber" />
+
+        <TextView
+            android:id="@+id/HouseModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RoomNumber"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/HouseMode" />
+
+        <TextView
+            android:id="@+id/FixedPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HouseModel"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/FixedPrice" />
+
+        <TextView
+            android:id="@+id/PricePerMeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FixedPrice"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/pricePerMeter" />
+
+        <TextView
+            android:id="@+id/MeliCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PricePerMeter"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/MeliCode" />
+
+        <TextView
+            android:id="@+id/Document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MeliCode"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Document" />
+
+        <TextView
+            android:id="@+id/Mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Document"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/Mobile" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

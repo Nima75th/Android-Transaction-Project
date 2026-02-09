@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstMoneyActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Relative1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاریخ"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+
+
+            />
+        <EditText
+            android:id="@+id/Day"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/slash1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_toStartOf="@+id/Day"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/Month"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@+id/slash1"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/slash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_toStartOf="@+id/Month"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/Year"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/slash2"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:inputType="number"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Relative1"
+        android:id="@+id/Relative2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خریدار"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/buyer"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/BuyerName"
+            android:textSize="15sp"
+            android:layout_toStartOf="@+id/buyer"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فرزند"
+            android:layout_toStartOf="@+id/BuyerName"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ChildOf"/>
+
+        <EditText
+            android:id="@+id/ChildOfName"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/ChildOf"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="شماره شناسنامه"
+            android:id="@+id/IdCode"
+            android:layout_toStartOf="@+id/ChildOfName"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/IdCodeValue"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/IdCode"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صادره از"
+            android:id="@+id/From"
+            android:layout_toStartOf="@+id/ChildOfName"
+            android:layout_below="@+id/buyer"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/FormValue"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/From"
+            android:layout_below="@id/buyer"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کد ملی"
+            android:id="@+id/Meli"
+            android:layout_toStartOf="@+id/FormValue"
+            android:layout_below="@+id/buyer"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/MeliCode"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Meli"
+            android:layout_below="@id/buyer"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="متولد"
+            android:id="@+id/Born"
+            android:layout_toStartOf="@+id/MeliCode"
+            android:layout_below="@+id/buyer"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/BornValue"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Born"
+            android:layout_below="@id/buyer"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آدرس دقیق و کامل"
+            android:id="@+id/Address"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/From"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/AddressValue"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Address"
+            android:layout_below="@id/From"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کد پستی"
+            android:id="@+id/PostCode"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Address"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/PostCodeValue"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/PostCode"
+            android:layout_below="@id/Address"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تلفن"
+            android:id="@+id/Phone"
+            android:layout_below="@+id/Address"
+            android:layout_toStartOf="@+id/PostCodeValue"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/PhoneValue"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Phone"
+            android:layout_below="@id/Address"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="موبایل"
+            android:id="@+id/Mobile"
+            android:layout_below="@+id/Address"
+            android:layout_toStartOf="@+id/PhoneValue"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/MobileValue"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Mobile"
+            android:layout_below="@id/Address"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مبلغ به عدد"
+            android:id="@+id/Cost"
+            android:layout_below="@+id/PostCode"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/CostValue"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Cost"
+            android:layout_below="@id/PostCode"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تومان و به حروف"
+            android:id="@+id/Toman"
+            android:layout_below="@+id/PostCode"
+            android:layout_toStartOf="@+id/CostValue"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/TomanValue"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Toman"
+            android:layout_below="@id/PostCode"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تومان بابت بیعانه."
+            android:id="@+id/TomanNumber"
+            android:layout_below="@+id/Cost"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خرید"
+            android:id="@+id/Buy"
+            android:layout_below="@+id/TomanNumber"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:id="@+id/BuyCheck"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/TomanNumber"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/Buy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اجاره"
+            android:id="@+id/Rant"
+            android:layout_below="@+id/TomanNumber"
+            android:layout_toStartOf="@id/BuyCheck"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/RantCheck"
+            android:layout_below="@+id/TomanNumber"
+            android:layout_toStartOf="@+id/Rant"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="یک باب مغازه"
+            android:id="@+id/Store"
+            android:layout_below="@+id/RantCheck"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/StoreCheck"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/Store"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="یک دستگاه آپارتمان"
+            android:id="@+id/Apartment"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/StoreCheck"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/ApartmentCheck"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/Apartment"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="یک قطعه زمین"
+            android:id="@+id/PieceOfLand"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/ApartmentCheck"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/PieceOfLandCheck"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/PieceOfLand"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="یک ویلا"
+            android:id="@+id/House"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/PieceOfLandCheck"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/HouseCheck"
+            android:layout_below="@+id/RantCheck"
+            android:layout_toStartOf="@+id/House"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="به آدرس"
+            android:id="@+id/Address2"
+            android:layout_below="@+id/Store"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/Address2Value"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Address2"
+            android:layout_below="@id/Store"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="شماره ثبتی سند"
+            android:id="@+id/Document"
+            android:layout_below="@+id/Address2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/DocumentValue"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/Document"
+            android:layout_below="@id/Address2"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

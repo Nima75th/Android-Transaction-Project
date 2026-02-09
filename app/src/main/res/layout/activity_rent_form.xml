@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentForm"
+    android:background="#FFD93D"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:id="@+id/Personal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" تاریخ :"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:id="@+id/Date"
+                />
+
+            <TextView
+                android:id="@+id/Day"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="18"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:layout_toStartOf="@+id/Date"
+                android:gravity="right"/>
+            <TextView
+                android:id="@+id/slash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_toStartOf="@+id/Day"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:id="@+id/Month"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="02"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:layout_toStartOf="@+id/slash1"
+                android:gravity="right"
+                />
+            <TextView
+                android:id="@+id/slash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_toStartOf="@+id/Month"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/Year"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="1402"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:layout_toStartOf="@+id/slash2"
+                android:gravity="right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موجر"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/buyer"
+                android:layout_below="@+id/Year"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/BuyerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toStartOf="@+id/buyer"
+                android:layout_below="@+id/Year"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="نیما سلیمی"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فرزند"
+                android:layout_toStartOf="@+id/BuyerName"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ChildOf"
+                android:layout_below="@+id/Year"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/ChildOfName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toStartOf="@+id/ChildOf"
+                android:layout_below="@+id/Year"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="علی"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شماره شناسنامه"
+                android:id="@+id/IdCode"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/Date"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/ChildOfName"
+                />
+
+            <TextView
+                android:id="@+id/IdCodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/IdCode"
+                android:textSize="15sp"
+                android:text="251"
+                android:layout_below="@+id/Date"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صادره از"
+                android:id="@+id/From"
+                android:layout_toStartOf="@+id/ChildOfName"
+                android:layout_below="@+id/IdCode"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/FormValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/From"
+                android:layout_below="@id/IdCode"
+                android:layout_marginTop="18dp"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="سقز"
+                android:textColor="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کد ملی"
+                android:id="@+id/Meli"
+                android:layout_toStartOf="@+id/FormValue"
+                android:layout_below="@+id/IdCodeValue"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/MeliCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/Meli"
+                android:layout_below="@id/IdCodeValue"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="3750402477"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="متولد"
+                android:id="@+id/Born"
+                android:layout_toStartOf="@+id/MeliCode"
+                android:layout_below="@+id/IdCodeValue"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/BornValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/Born"
+                android:layout_below="@id/IdCodeValue"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="سقز"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آدرس دقیق و کامل"
+                android:id="@+id/Address"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Meli"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/AddressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/Address"
+                android:layout_below="@id/Meli"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:text="کردستان _ سقز _ بلوار شهید بهشتی"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کد پستی"
+                android:id="@+id/PostCode"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Address"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/PostCodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/PostCode"
+                android:layout_below="@id/Address"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="6681633751"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تلفن"
+                android:id="@+id/Phone"
+                android:layout_below="@+id/Address"
+                android:layout_toStartOf="@+id/PostCodeValue"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/PhoneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/Phone"
+                android:layout_below="@id/Address"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="0876277555"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موبایل"
+                android:id="@+id/Mobile"
+                android:layout_below="@+id/PostCode"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/MobileValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PostCode"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@+id/Mobile"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="09184182189"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#434242"
+                android:layout_below="@+id/MobileValue"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GiveRent"
+                android:layout_below="@+id/MobileValue"
+                android:layout_marginTop="20dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مستاجر"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/buyer2"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/BuyerName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_toStartOf="@+id/buyer2"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="نیما سلیمی"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="فرزند"
+                    android:layout_toStartOf="@+id/BuyerName2"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ChildOf2"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ChildOfName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_toStartOf="@+id/ChildOf2"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="علی"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="شماره شناسنامه"
+                    android:id="@+id/IdCode2"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/ChildOfName2"
+                    />
+
+                <TextView
+                    android:id="@+id/IdCodeValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/IdCode2"
+                    android:textSize="15sp"
+                    android:text="251"
+                    android:textColorHint="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="صادره از"
+                    android:id="@+id/From2"
+                    android:layout_toStartOf="@+id/ChildOfName2"
+                    android:layout_below="@+id/IdCode2"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/FormValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/From2"
+                    android:layout_below="@id/IdCode2"
+                    android:layout_marginTop="18dp"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="سقز"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کد ملی"
+                    android:id="@+id/Meli2"
+                    android:layout_toStartOf="@+id/FormValue2"
+                    android:layout_below="@+id/IdCodeValue2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/MeliCode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/Meli2"
+                    android:layout_below="@id/IdCodeValue2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="3750402477"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="متولد"
+                    android:id="@+id/Born2"
+                    android:layout_toStartOf="@+id/MeliCode2"
+                    android:layout_below="@+id/IdCodeValue2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/BornValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/Born2"
+                    android:layout_below="@id/IdCodeValue2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="سقز"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="آدرس دقیق و کامل"
+                    android:id="@+id/Address2"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/Meli2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/AddressValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/Address2"
+                    android:layout_below="@id/Meli2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:gravity="right"
+                    android:text="کردستان _ سقز _ بلوار شهید بهشتی"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کد پستی"
+                    android:id="@+id/PostCode2"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/Address2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/PostCodeValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/PostCode2"
+                    android:layout_below="@id/Address2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="6681633751"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تلفن"
+                    android:id="@+id/Phone2"
+                    android:layout_below="@+id/Address2"
+                    android:layout_toStartOf="@+id/PostCodeValue2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/PhoneValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/Phone2"
+                    android:layout_below="@id/Address2"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="0876277555"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="موبایل"
+                    android:id="@+id/Mobile2"
+                    android:layout_below="@+id/PostCode2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/MobileValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/PostCode2"
+                    android:layout_marginTop="20dp"
+                    android:layout_toStartOf="@+id/Mobile2"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="09184182189"/>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Next"
+            android:text="مشخصات ملک"
+            android:layout_below="@+id/Personal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            android:background="#181823"
+            app:backgroundTint="#181823"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/topAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:backgroundTint="#181823"
+        android:focusable="false"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="false"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"
+            app:menu="@menu/top_menu"
+            android:layout_marginLeft="300dp"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Float"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/bottomAppbar"
+        app:maxImageSize="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

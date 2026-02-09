@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/TxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CustomerName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            android:gravity="right"
+            android:text="@string/CustomerName"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/T_Meli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtName"
+            android:layout_marginTop="10dp"
+            android:text="@string/CustomerIdCode" />
+
+        <TextView
+            android:id="@+id/T_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/T_Meli"
+            android:layout_marginTop="10dp"
+            android:text="@string/CustomerEmail" />
+
+        <TextView
+            android:id="@+id/T_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/T_Email"
+            android:layout_marginTop="10dp"
+            android:text="@string/CustomerAddress" />
+
+        <TextView
+            android:id="@+id/T_Mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/T_Address"
+            android:layout_marginTop="10dp"
+            android:text="@string/CustomerMobile" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivityBuilding"
+    android:background="#F9F9F9">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+
+            <EditText
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Title"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Title"
+                android:hint="@string/Description"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/Old"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Description"
+                android:hint="@string/Old"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/Meter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Old"
+                android:hint="@string/Meter"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/Floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Meter"
+                android:hint="@string/Floor"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/Parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Floor"
+                android:text="@string/Parking"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/Storeroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Parking"
+                android:text="@string/Storeroom"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/Elevator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Storeroom"
+                android:text="@string/Elevator"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/RoomNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Elevator"
+                android:hint="@string/RoomNumber"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/HouseModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RoomNumber"
+                android:hint="@string/HouseMode"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/FixedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/HouseModel"
+                android:hint="@string/FixedPrice"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/PricePerMeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/FixedPrice"
+                android:hint="@string/pricePerMeter"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/MeliCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PricePerMeter"
+                android:hint="@string/MeliCode"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/Document"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MeliCode"
+                android:hint="@string/Document"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Document"
+                android:hint="@string/Mobile"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#F8F5E4"
+                android:layout_marginTop="20dp"
+                >
+
+
+                <Button
+                    android:id="@+id/Auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Auth"
+                    android:textSize="20sp"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#FF7B70"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Submit"
+                    android:text="@string/Submit"
+                    android:textSize="20sp"
+                    android:layout_toStartOf="@+id/Auth"
+                    android:layout_marginRight="13dp"
+                    android:backgroundTint="#FF7B70"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/Pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_toStartOf="@+id/Submit"
+                    android:backgroundTint="#FF7B70"
+                    android:text="@string/CustomerPic"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+        app:hideOnScroll="true"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="selected"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"
+            android:focusable="false"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/topAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:backgroundTint="#181823"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabCradleMargin="8dp"
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_item_background"
+            app:itemTextColor="@color/bottom_item_background"
+            app:backgroundTint="#181823"/>
+
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

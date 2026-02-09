@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Navigation</string>
+    <string name="CustomerName">نام : </string>
+    <string name="CustomerFamily">نام خانوادگی :</string>
+    <string name="CustomerIdCode">کد ملی :</string>
+    <string name="CustomerMobile">شماره موبایل :</string>
+    <string name="CustomerEmail">ایمیل :</string>
+    <string name="CustomerAddress">آدرس :</string>
+    <string name="CustomerPic">آپلود عکس</string>
+    <string name="Submit">ثبت</string>
+    <string name="Auth">احراز هویت</string>
+    <string name="Age">سن :</string>
+    <string name="Title"> موضوع :</string>
+    <string name="Description">توضیحات بیشتر :</string>
+    <string name="Old">سال ساخت :</string>
+    <string name="Meter">متراژ :</string>
+    <string name="Floor">طبقه :</string>
+    <string name="Parking">پارکینگ :</string>
+    <string name="Storeroom">انباری :</string>
+    <string name="Elevator">آسانسور :</string>
+    <string name="RoomNumber">تعداد خواب :</string>
+    <string name="HouseMode">نوع ملک :</string>
+    <string name="FixedPrice">قیمت کل :</string>
+    <string name="pricePerMeter">قیمت هر متر :</string>
+    <string name="MeliCode">کد ملی :</string>
+    <string name="Document">نوع سند :</string>
+    <string name="Mobile">شماره موبایل :</string>
+    <string name="Meli_Ask">لطفا کد ملی خود را وارد کنید :</string>
+    <string name="About">تمامی حقوق و قوانین این اپلیکیشن به صورت رسمی ثبت شده و اجازه ی کپی رایت در آن وجود ندارد .</string>
+
+
+</resources>
