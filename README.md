@@ -29,6 +29,5 @@ A professional, high-security Android application developed to showcase advanced
 <p align="center">
   <img src="screenshots/Home.jpg" width="30%" />
   <img src="screenshots/SighnUp.jpg" width="30%" />
-  <img src="screenshots/Register.jpg" width="30%" />
   <img src="screenshots/AddProduct.jpg" width="30%" /> 
 </p>
